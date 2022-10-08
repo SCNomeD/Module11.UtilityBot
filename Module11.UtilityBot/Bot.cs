@@ -10,7 +10,6 @@ namespace Module11.UtilityBot
 {
     public class Bot : BackgroundService
     {
-
         private readonly ITelegramBotClient _telegramClient;
 
         private readonly InlineKeyboardController _inlineKeyboardController;
