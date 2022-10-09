@@ -11,7 +11,6 @@ namespace Module11.UtilityBot
     public class Bot : BackgroundService
     {
         private readonly ITelegramBotClient _telegramClient;
-
         private readonly InlineKeyboardController _inlineKeyboardController;
         private readonly TextMessageController _textMessageController;
         private readonly DefaultMessageController _defaultMessageController;
@@ -23,7 +22,6 @@ namespace Module11.UtilityBot
             _textMessageController = textMessageController;
             _defaultMessageController = defaultMessageController;
         }
-
 
         private async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
         {
@@ -65,7 +63,6 @@ namespace Module11.UtilityBot
             Thread.Sleep(10000);
 
             return Task.CompletedTask;
-
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
